@@ -5,7 +5,7 @@
 
 <br>
 
-## COMANDOS SHELL
+## COMANDOS SHELL / QUERY
 
 - Lista os DB existentes na máquina
   ```
@@ -14,7 +14,7 @@
 
 - Criação de um novo DB
   ```
-  create data base nome_do_DB
+  create database nome_do_DB;
   ```
 
 - sair do DB
@@ -29,7 +29,7 @@
 
 - mostra todas as tabelas presentes no DB
   ```
-   \dt
+   \dt;
   ```
 
   - criar tabela
@@ -38,14 +38,15 @@
   ```
 
     - exemplo de tabela:
-  ```
-   create table alunos (
-  id_aluno serial primary key,
-  nome varchar(45),
-  telefone varchar(15)
-  );
-  
-  ```
+
+      ```
+      create table alunos (
+      id_aluno serial primary key,
+      nome varchar(45),
+      telefone varchar(15)
+      );
+      
+      ```
 
   - inclusão de tabela no DB
   ```
@@ -55,6 +56,11 @@
   - mostra todas as linhas cadastradas na tabela referente
   ```
    select * from nome_da_tabela
+  ```
+
+  - alterar nome de database
+  ```
+   alter database nome_atual_do_DB rename to nome_desejado;
   ```
 
 ## TABLESPACE
