@@ -56,3 +56,12 @@
   ```
    select * from nome_da_tabela
   ```
+
+## TABLESPACE
+<p> salvar os arquivos do banco de dados em determinadas pastas, fisicamente no HD e/ou SSD. </p> 
+
+  ### recomendação para melhor performance do servidor
+
+  - salvar tabelas em um HD.
+
+  - armazenar os indexes em um SSD por ser mais rápido, auxiliando nas consultas.
