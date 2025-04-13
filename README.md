@@ -63,6 +63,11 @@
    alter database nome_atual_do_DB rename to nome_desejado;
   ```
 
+  - remover database
+  ```
+   drop database nome_do_DB;
+  ```
+
 ## TABLESPACE
 <p> salvar os arquivos do banco de dados em determinadas pastas, fisicamente no HD e/ou SSD. </p> 
 
