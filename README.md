@@ -22,7 +22,7 @@
   \q
   ```
 
-  - nome do meu DB 
+- nome do meu DB 
   ```
   cursodb 
   ```
@@ -32,7 +32,7 @@
    \dt;
   ```
 
-  - criar tabela
+- criar tabela
   ```
    create table nome_da_tabela (
   ```
@@ -48,25 +48,36 @@
       
       ```
 
-  - inclusão de tabela no DB
+- inclusão de tabela no DB
   ```
    insert into nome_da_tabela (campos que ira atualizar, ex: (nome, telefone)) values (inserção de elementos no campo, ex: (DANIEL, 12345))
   ```
 
-  - mostra todas as linhas cadastradas na tabela referente
+- mostra todas as linhas cadastradas na tabela referente
   ```
    select * from nome_da_tabela
   ```
 
-  - alterar nome de database
+- alterar nome de database
   ```
    alter database nome_atual_do_DB rename to nome_desejado;
   ```
 
-  - remover database
+- remover database
   ```
    drop database nome_do_DB;
   ```
+
+
+
+- criar de dominio
+  ```
+   create DOMAIN nome_do_dominio;
+  ```
+
+
+
+
 
 ## TABLESPACE
 <p> salvar os arquivos do banco de dados em determinadas pastas, fisicamente no HD e/ou SSD. </p> 
