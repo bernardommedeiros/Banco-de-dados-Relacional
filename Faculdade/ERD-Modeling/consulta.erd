@@ -1,0 +1,29 @@
+erdiagram Consulta
+
+notation=chen
+
+entity Medico{
+    crm key
+    nome
+    especialidades multivalued
+    email optional
+}
+
+entity Paciente{ 
+    cpf key
+    nome
+    endereco
+    telefone multivalued
+}
+
+weak entity Consulta { 
+    data_consulta partial-key
+}
+
+weak relationship vinculo_medico{ 
+    Consulta[0..N] -> Medico[1..1]
+}
+
+weak relationship vinculo_paciente{ 
+    Consulta[1..N] -> Paciente[1..1]
+}

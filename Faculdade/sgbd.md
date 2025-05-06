@@ -10,6 +10,8 @@
 - descreve os dados em entidades e relacionamento 
 - sintaxe semelhante a UML - Diagramação
 
+### Key
+<p> atributo identificador </p>
 
 ### Entidade
 <p> elemento alvo das informações </p>
