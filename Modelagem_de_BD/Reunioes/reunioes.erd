@@ -1,0 +1,32 @@
+erdiagram Reuniao
+
+notation=chen
+
+entity Classroom{
+    id key
+    maxCapacity 
+    description
+}
+
+entity Colaborator{
+    cpf key
+    nome
+    departament
+}
+
+entity Reservation{
+}
+
+entity Equipment{
+    id key
+    name 
+    available_quantity
+}
+
+relationship ColaboratorReervation{
+    Colaborator[1] -> Reservation[0..N]
+}
+
+relationship ClassReservation{
+    Colaborator[1] -> Reservation[0..N]
+}
