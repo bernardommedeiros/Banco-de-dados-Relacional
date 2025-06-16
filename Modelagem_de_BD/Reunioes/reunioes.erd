@@ -6,15 +6,28 @@ entity Classroom{
     id key
     maxCapacity 
     description
+    location
 }
 
 entity Colaborator{
     cpf key
     nome
-    departament
+    department
 }
 
 entity Reservation{
+    id key
+    date
+    start_time
+    end_time
+}
+
+relationship ColaboratorReservation{
+    Colaborator[1] -> Reservation[0..N]
+}
+
+relationship ClassReservation{
+    Classroom[1] -> Reservation[0..N]
 }
 
 entity Equipment{
@@ -23,10 +36,7 @@ entity Equipment{
     available_quantity
 }
 
-relationship ColaboratorReervation{
-    Colaborator[1] -> Reservation[0..N]
-}
-
-relationship ClassReservation{
-    Colaborator[1] -> Reservation[0..N]
+relationship EquipmentReservation{
+    Reservation[1] -> Equipment[0..N]
+    requested_quantity
 }

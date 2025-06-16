@@ -1,6 +1,6 @@
 # Gerenciamento de salas de aula
 
-Deseja-se projetar um banco de dados que dará suporte a um sistema para gerenciar o uso de salas de reunião em uma empresa de consultoria. O objetivo do sistema é controlar as reservas realizadas pelos colaboradores e fornecer informações para otimizar a ocupação das salas. A modelagem deve ser feita por meio de um diagrama entidade-relacionamento no nível conceitual, e o banco de dados resultante não deve conter redundância de dados. O modelo deve incluir entidades, relacionamentos, atributos, especializações (quando aplicável), identificadores e restrições de cardinalidade. Não devem ser utilizados atributos multivalorados, nem chaves estrangeiras.
+Deseja-se projetar um banco de dados que dará suporte a um sistema para gerenciar o uso de salas de reunião em uma empresa de consultoria. O objetivo do sistema é controlar as reservas realizadas pelos colaboradores e fornecer informações para otimizar a ocupação das salas. A modelagem deve ser feita por meio de um diagrama entidade-relacionamento no nível conceitual, e o banco de dados resultante não deve conter redundância de dados. O modelo deve incluir entidades, relacionamentos, atributos, especializações (quando aplicável), identificadores e restrições de cardinalidade. Não devem ser utilizado chaves estrangeiras.
 
 A empresa possui várias salas de reunião, e cada sala deve ser identificada por um número único, além de possuir uma capacidade máxima de pessoas e uma descrição. As salas podem estar localizadas em diferentes andares ou prédios.
 
