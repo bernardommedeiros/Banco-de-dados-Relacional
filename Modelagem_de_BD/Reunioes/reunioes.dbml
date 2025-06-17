@@ -1,0 +1,33 @@
+Table colaborator {
+  cpf uuid [pk, unique, not null]
+  name varchar [not null]
+  department varchar [not null]
+}
+
+Table classroom {
+  id uuid [pk, unique, not null]
+  max_capacity int [not null]
+  description varchar [not null]
+  location varchar [not null]
+}
+
+Table reservation {
+  id uuid [pk, unique, not null]
+  date date [not null]
+  start_time timestamp [not null]
+  end_time timestamp [not null]
+  classroom_id uuid [ref: > classroom.id, not null]
+  colaborator_cpf uuid [ref: > colaborator.cpf, not null]
+}
+
+Table reservation_equipment {
+  id uuid [pk, unique, not null]
+  requested_quantity int [not null]
+  reservation_id uuid [ref: > reservation.id, not null]
+  equipment_id uuid [ref: > equipment.id, not null]
+}
+
+Table equipment {
+  id uuid [pk, unique, not null]
+  name varchar [not null] 
+}

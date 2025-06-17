@@ -36,7 +36,15 @@ entity Equipment{
     available_quantity
 }
 
-relationship EquipmentReservation{
-    Reservation[1] -> Equipment[0..N]
+entity ReservedEquipment{
+    id key
     requested_quantity
+}
+
+relationship ReservationOfEquipment{
+    Equipment[0..N] -> ReservedEquipment[1] 
+}
+
+relationship EquipmentOnReservation{
+    ReservedEquipment[1] -> Reservation[0..N] 
 }
